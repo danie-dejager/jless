@@ -15,6 +15,7 @@ Source0:  https://github.com/PaulJuliusMartinez/jless/archive/refs/tags/v%{versi
 BuildRequires: curl
 BuildRequires: gcc
 BuildRequires: xcb-util-renderutil-devel
+BuildRequires: libxcb-devel
 
 %description
 jless is a command-line JSON viewer. Use it as a replacement for whatever combination of less, jq, cat and your editor you currently use for viewing JSON files.
