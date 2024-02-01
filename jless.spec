@@ -27,7 +27,7 @@ It is written in Rust and can be installed as a single standalone binary.
 # Install Rust using curl
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 export PATH="$PATH:$HOME/.cargo/bin"
-cargo build --release --locked
+RUST_BACKTRACE=1 cargo build --release --locked
 strip target/release/%{name}
 
 %install
