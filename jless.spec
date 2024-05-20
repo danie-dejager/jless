@@ -1,6 +1,6 @@
 %define name jless
 %define version 0.9.0
-%define release 1%{?dist}
+%define release 2%{?dist}
 
 Summary:  jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data
 Name:     %{name}
