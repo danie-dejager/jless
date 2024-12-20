@@ -1,6 +1,6 @@
 %define name jless
 %define version 0.9.0
-%define release 3%{?dist}
+%define release 4%{?dist}
 
 Summary:  jless is a command-line JSON viewer designed for reading, exploring, and searching through JSON data
 Name:     %{name}
@@ -44,6 +44,7 @@ install -m 755 target/release/%{name} %{buildroot}/bin/
 /bin/%{name}
 
 %changelog
-* Fri Sep 13 2024 - Danie de Jager - 0.9.0-%{release}
+* Fri Dec 20 2024 - Danie de Jager - 0.9.0-%{release}
+* Fri Sep 13 2024 - Danie de Jager - 0.9.0-2
 * Wed Jan 31 2024 - Danie de Jager - 0.9.0-1
 - Initial RPM build
