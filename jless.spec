@@ -11,7 +11,7 @@ URL:      https://github.com/PaulJuliusMartinez/jless
 Source0:  https://github.com/PaulJuliusMartinez/jless/archive/refs/tags/v%{version}.tar.gz
 
 %define debug_package %{nil}
-%undefine _package_note_flags
+%global _package_note_flags %{nil}
 
 BuildRequires: curl
 BuildRequires: gcc
