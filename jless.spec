@@ -11,6 +11,7 @@ URL:      https://github.com/PaulJuliusMartinez/jless
 Source0:  https://github.com/PaulJuliusMartinez/jless/archive/refs/tags/v%{version}.tar.gz
 
 %define debug_package %{nil}
+%undefine _package_note_flags
 
 BuildRequires: curl
 BuildRequires: gcc
@@ -29,6 +30,7 @@ It is written in Rust and can be installed as a single standalone binary.
 # Install Rust using curl
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 export PATH="$PATH:$HOME/.cargo/bin"
+export RUSTFLAGS="$RUSTFLAGS -C link-arg=-fuse-ld=bfd"
 RUST_BACKTRACE=1 CARGO_PROFILE_RELEASE_BUILD_OVERRIDE_DEBUG=true cargo build --release --locked
 strip target/release/%{name}
 
